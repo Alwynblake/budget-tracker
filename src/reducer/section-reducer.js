@@ -3,7 +3,7 @@ export default (state = [], {type, payload}) => {
   console.log('in reducer', type);
   switch (type) {
     case'SECTION_CREATE':
-      console.log('payload', payload);
+      // console.log('payload', payload);
       return [...state, payload];
     case'SECTION_UPDATE':
       // *we are going to use map *

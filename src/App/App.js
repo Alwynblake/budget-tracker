@@ -19,9 +19,9 @@ class App extends React.Component {
 // connect to the provider and get elements from the provider
 const  mapStateToProps = (state) => {
 // anything returned will become props
-  console.log('state', state);
+//   console.log('state', state);
 return {
-  sections: state,
+  sections: state.sections,
  };
 };
 
@@ -34,4 +34,5 @@ return {
  }
 };
 // create a new component called App but first add props to it from these 2 functions.
+// the connect method takes state from store and passes it as props
 export default connect(mapStateToProps, mapDispatchToProps)(App);
