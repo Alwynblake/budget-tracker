@@ -2,6 +2,7 @@
 
 export const createSection = (title) => {
   // return object that represents the action
+  console.log('createSection');
   return {
     type: 'SECTION_CREATE',
     payload: {
