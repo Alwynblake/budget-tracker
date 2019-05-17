@@ -1,27 +1,26 @@
 # budget-tracker
-
+### author: Alistair A. Blake
 #### Feature Tasks
 ##### category
-* in this app a category should contain at least the following properties
+* in this app a section contains at least the following properties:
   * `id` a uuid
-  * `timestamp` a date from when the category was created
+  * `timestamp` a date from when the section was created
   * `name` a string that is the name of the category
   * `budget` a number that is the total amount of $ in the category
-  * feel free to add more to your categories
 
 ##### redux
 ###### reducer
-* create a category reducer in your reducer directory
-* this reducer should support the following interactions
+* created a section reducer in your reducer directory
+* this reducer supports the following interactions:
   * `CATEGORY_CREATE`
   * `CATEGORY_UPDATE`
   * `CATEGORY_DESTROY`
 
 ###### action creators
-* you should create an action creator for each interaction supported by your category reducer
+* created an action creator for each interaction supported by the section reducer
 
 ##### Components
-Create the following components and structure them according to the following diagram.
+Created the following components and structured them according to the following diagram.
 ```
 App
   Provider

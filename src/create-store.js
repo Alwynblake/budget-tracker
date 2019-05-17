@@ -1,8 +1,12 @@
 import { createStore } from 'redux';
-import sectionReducer from './reducer/section-reducer';
+import mainReducer from './reducer/main-reducer';
+import {composeWithDevTools} from "redux-devtools-extension";
+
+// import sectionReducer from './reducer/section-reducer';
 
 export default () => {
-  return createStore(sectionReducer);
+  // create Store and assign a listener to it that will connect to the DevTools function that connects to chrome
+  return createStore(mainReducer, composeWithDevTools());
 };
 // const store = createStore(sectionReducer);
 // export default store
