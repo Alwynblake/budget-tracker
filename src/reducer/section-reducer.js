@@ -1,9 +1,11 @@
 export default (state = [], {type, payload}) => {
   // payload is a section in this situation
+  console.log('in reducer', type);
   switch (type) {
-    case'SECTION CREATE':
+    case'SECTION_CREATE':
+      console.log('payload', payload);
       return [...state, payload];
-    case'SECTION UPDATE':
+    case'SECTION_UPDATE':
       // *we are going to use map *
       // possible structure:
 //         handleUpdateSection = (section) =>
@@ -15,7 +17,7 @@ export default (state = [], {type, payload}) => {
 // });
 
       return null;
-    case'SECTION DELETE':
+    case'SECTION_DELETE':
       // *we are going to use filter *
         // possible structure:
         // handleRemoveSection = (section) => {
